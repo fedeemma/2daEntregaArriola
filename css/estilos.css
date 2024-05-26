@@ -1,0 +1,126 @@
+.cine {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cine h1 {
+    color: rgb(18, 39, 223);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+  .cine p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: rgb(18, 39, 223);
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+
+
+  .pelDisp{
+    grid-area: h1Disp;
+  }
+  
+  .pelicula1 {
+    grid-area: peli1;
+  }
+  
+  .creed3 {
+    grid-area: verCreed3;
+    width: 100%;
+  }
+  
+  .pelicula2 {
+    grid-area: peli2;
+  }
+
+  .laExtorsion {
+    grid-area: verLaExt;
+    width: 100%;
+  }
+  
+  .pelicula3 {
+    grid-area: peli3;
+  }
+  
+  .rapidosFurioso{
+    grid-area: verRyP10;
+    width: 100%;
+  }
+  
+  .pelicula4 {
+    grid-area: peli4;
+  }
+  
+  .superMario {
+    grid-area: verSupMarB;
+    width: 100%;
+  }
+
+  .cine {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 2rem;
+    grid-template-areas: "h1Disp" "peli1" "verCreed3" "peli2" "verLaExt" "peli3" "verRyP10" "peli4" "verSupMarB";
+    justify-items: center;
+  }
+
+  @media screen and (min-width: 600px) {
+    .cine .h1 {
+      font-size: 2rem;
+    }
+    .cine p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .pelDisp {
+      grid-area: h1Disp;
+      display: flex;
+      align-items: center;
+    }
+    .pelicula1{
+      grid-area: peli1;
+      display: flex;
+      align-items: center;
+    }
+    .pelicula2 {
+      grid-area: peli2;
+      display: flex;
+      align-items: center;
+    }
+    .pelicula3 {
+      grid-area: peli3;
+      display: flex;
+      align-items: center;
+    }
+    .pelicula4 {
+      grid-area: peli4;
+      display: flex;
+      align-items: center;
+    }
+    
+    .cine {
+      margin: 1rem 0 3rem 0;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 5rem auto;
+      gap: 2rem;
+      grid-template-areas: "h1Disp" "peli1" "verCreed3" "peli2" "verLaExt" "peli3" "verRyP10" "peli4" "verSupMarB";
+      justify-items: center;
+    }
+  }
